@@ -1,0 +1,148 @@
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Estilos del contenido principal */
+main {
+    padding: 20px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+/* Estilos del pie de página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+/* Imágenes */
+.img-fluid {
+    max-width: 100%; /* Hace que las imágenes sean responsivas */
+    height: auto;
+  }
+
+
+/* Estilos para los párrafos con clase marketplace-paragraph */
+.marketplace-paragraph {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333; /* Color del texto */
+    text-align: center;
+    margin: 20px 0; /* Espaciado externo */
+    /* Otros estilos que desees agregar */
+}
+
+
+
+
+.product {
+    border: 2px solid #ccc; /* Borde de 2 píxeles sólido con color gris */
+    border-radius: 8px; /* Esquinas redondeadas */
+    padding: 20px; /* Espacio dentro del borde */
+    margin-bottom: 20px; /* Espacio entre productos */
+    /* Otros estilos que desees agregar */
+}
+
+
+
+.marketplace-title {
+    background-color: #f8f8f8; /* Color de fondo */
+    border: 1px solid #ddd; /* Borde de 1 píxel sólido con color gris */
+    border-radius: 5px; /* Esquinas redondeadas */
+    padding: 10px; /* Espacio alrededor del texto */
+    text-align: center; /* Centrar el texto */
+    font-weight: bold; /* Texto en negrita */
+    color: #333; /* Color del texto */
+    /* Otros estilos que desees agregar */
+}
+
+
+.add-to-cart-btn {
+    background-color: #ffcc00;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #e6b800;
+  }
+
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Estilos para cada producto */
+.product {
+    width: 48%; /* El 48% se adapta para dejar un pequeño espacio entre los dos productos en la misma fila */
+    margin-bottom: 20px;
+    /* Otros estilos que desees agregar */
+}
+
+.cart-container {
+    /* Estilos para el contenedor del carrito */
+    width: 300px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+#DOC{width: 80%;}

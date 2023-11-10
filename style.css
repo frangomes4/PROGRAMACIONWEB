@@ -11,11 +11,11 @@ h1 {
 }
 
 h6 {
-  color: brown;
+  color: blue;
 }
 
 p {
-  color: black;
+  color: silver;
   margin: 10px 0;
 }
 
@@ -72,17 +72,17 @@ table {
 
 
 
-body{background-color: silver;}
+body{background-color:silver;}
 
 
 
 
 
-
+h1{color: silver;}
 h1{margin-bottom: 50px}
 h1{margin-top: 50px}
-h6{color: brown;}
-p{color:black;}
+h6{color: blue(195, 35, 35);}
+p{color:silver;}
 p{margin-top: 50px;}
 p{margin-bottom:50px}
 
@@ -105,7 +105,7 @@ li{margin-top: 30px}
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #333; /* Cambia el color de fondo según tus preferencias */
+    background-color: #111; /* Cambia el color de fondo según tus preferencias */
     text-align: center;
     padding: 10px 0; /* Espaciado interno para los iconos */
   }
@@ -130,3 +130,17 @@ li{margin-top: 30px}
     flex: 1; 
     margin-right: 20px;
 }
+
+.fondo-blanco {
+  background-color: white;
+  width: 50PX; /* Ajusta el ancho según tus necesidades */
+  height: 50PX; /* Ajusta la altura según tus necesidades */
+}
+
+.fondo-negro {
+  background-color: black;
+  width: 50px; /* Ajusta el ancho según tus necesidades */
+  height: 50px; /* Ajusta la altura según tus necesidades */
+}
+
+
