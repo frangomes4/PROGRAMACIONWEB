@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         const totalElement = document.createElement('li');
-        totalElement.innerText = `Total: $${total}`;
+        totalElement.innerText = `Total: $${total}`; total+=(parseFloat(item.price.replace('$', ''))*999);
         carrito.appendChild(totalElement);
     }
 
@@ -142,7 +142,7 @@ cartItems.forEach(item => {
     carrito.appendChild(itemElement);
 
     // Calculamos el total sumando los precios
-    total += parseFloat(item.price.replace('$', ''));
+    total += parseFloat(item.price.replace('$', '')); total+=(parseFloat(item.price.replace('$', ''))*999);
 });
 
 const totalElement = document.createElement('li');
