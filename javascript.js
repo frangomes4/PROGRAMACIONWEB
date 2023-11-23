@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.getElementById("negroBlanco").addEventListener("click", function () {
         document.body.style.backgroundColor = "black";
-        document.body.style.color = "white";
-        changeParagraphColor("white"); // Cambia el color del texto de los párrafos a blanco
+        document.body.style.color = "grey";
+        changeParagraphColor("grey"); // Cambia el color del texto de los párrafos a blanco
     });
 
     function changeParagraphColor(color) {
@@ -19,23 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("searchForm").addEventListener("submit", function(event) {
-        event.preventDefault(); // Evitar el envío del formulario
 
-        const query = document.getElementById("searchInput").value.toLowerCase();
-        const pageContent = document.body.innerText.toLowerCase();
-
-        if (pageContent.includes(query)) {
-            alert(`Se encontró: "${query}" en la página.`);
-            // Aquí podrías realizar alguna acción adicional, como resaltar el texto encontrado, mostrarlo en otra parte, etc.
-        } else {
-            alert(`No se encontró: "${query}" en la página.`);
-        }
-    });
-
-
-
-
-
-
+    function mostrarMensaje() {
+    alert("Correo enviado con éxito. La información de la reserva ha sido enviada.");
+}

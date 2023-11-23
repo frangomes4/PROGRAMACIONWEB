@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.getElementById("negroBlanco").addEventListener("click", function () {
         document.body.style.backgroundColor = "black";
-        document.body.style.color = "white";
-        changeParagraphColor("white"); // Cambia el color del texto de los párrafos a blanco
+        document.body.style.color = "grey";
+        changeParagraphColor("grey"); // Cambia el color del texto de los párrafos a gris
     });
 
     function changeParagraphColor(color) {
@@ -35,8 +35,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.getElementById("negroBlanco").addEventListener("click", function () {
         document.body.style.backgroundColor = "black";
-        document.body.style.color = "white";
-        changeParagraphColor("white"); // Cambia el color del texto de los párrafos a blanco
+        document.body.style.color = "grey";
+        changeParagraphColor("grey"); // Cambia el color del texto de los párrafos a gris
     });
 
     function changeParagraphColor(color) {

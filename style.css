@@ -19,34 +19,33 @@ p {
   margin: 10px 0;
 }
 
-/* Navbar */
+
 .navbar {
   padding: 0.5rem 0;
 }
 
-/* Logo */
+
 #LOGO {
-  max-width: 100%; /* Evitar que la imagen se desborde en pantallas más pequeñas */
+  max-width: 100%; 
   height: auto;
 }
 
 /* Imágenes */
 .img-fluid {
-  max-width: 100%; /* Hace que las imágenes sean responsivas */
+  max-width: 100%; 
   height: auto;
 }
 
-/* Sección de beneficios */
+
 #footer {
   padding: 20px 0;
 }
 
-/* Tabla de stock */
+
 table {
   width: 100%;
 }
 
-/* Formulario y redes sociales */
 .social-container {
   text-align: center;
   padding: 10px 0;
@@ -141,6 +140,23 @@ li{margin-top: 30px}
   background-color: black;
   width: 50px; /* Ajusta el ancho según tus necesidades */
   height: 50px; /* Ajusta la altura según tus necesidades */
+}
+
+
+.fondo-blanco {
+  background-color: white;
+  width: 50px; /* Ajusta el ancho según tus necesidades */
+  height: 50px; /* Ajusta la altura según tus necesidades */
+  border: 2px solid black; /* Borde negro */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+.fondo-negro {
+  background-color: black;
+  width: 50px; /* Ajusta el ancho según tus necesidades */
+  height: 50px; /* Ajusta la altura según tus necesidades */
+  border: 2px solid white; /* Borde blanco */
+  border-radius: 10px; /* Bordes redondeados */
 }
 
 
