@@ -3,7 +3,7 @@ body, ul {
     padding: 0;
 }
 
-/* Estilos del encabezado */
+
 header {
     background-color: #f0f0f0;
     padding: 20px;
@@ -37,7 +37,6 @@ nav {
     color: #333;
 }
 
-/* Estilos del contenido principal */
 main {
     padding: 20px;
 }
@@ -48,52 +47,52 @@ main {
     grid-gap: 20px;
 }
 
-/* Estilos del pie de página */
+
 footer {
     text-align: center;
     padding: 10px;
     background-color: #f0f0f0;
 }
 
-/* Imágenes */
+
 .img-fluid {
-    max-width: 100%; /* Hace que las imágenes sean responsivas */
+    max-width: 100%; 
     height: auto;
   }
 
 
-/* Estilos para los párrafos con clase marketplace-paragraph */
+
 .marketplace-paragraph {
     font-size: 1.5em;
     font-weight: bold;
-    color: #333; /* Color del texto */
+    color: #333;
     text-align: center;
-    margin: 20px 0; /* Espaciado externo */
-    /* Otros estilos que desees agregar */
+    margin: 20px 0; 
+  
 }
 
 
 
 
 .product {
-    border: 2px solid #ccc; /* Borde de 2 píxeles sólido con color gris */
-    border-radius: 8px; /* Esquinas redondeadas */
-    padding: 20px; /* Espacio dentro del borde */
-    margin-bottom: 20px; /* Espacio entre productos */
-    /* Otros estilos que desees agregar */
+    border: 2px solid #ccc; 
+    border-radius: 8px; 
+    padding: 20px; 
+    margin-bottom: 20px; 
+    
 }
 
 
 
 .marketplace-title {
-    background-color: #f8f8f8; /* Color de fondo */
-    border: 1px solid #ddd; /* Borde de 1 píxel sólido con color gris */
-    border-radius: 5px; /* Esquinas redondeadas */
-    padding: 10px; /* Espacio alrededor del texto */
-    text-align: center; /* Centrar el texto */
-    font-weight: bold; /* Texto en negrita */
-    color: #333; /* Color del texto */
-    /* Otros estilos que desees agregar */
+    background-color: #f8f8f8; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    padding: 10px; 
+    text-align: center; 
+    font-weight: bold; 
+    color: #333; 
+ 
 }
 
 
@@ -119,11 +118,11 @@ footer {
 ;
 }
 
-/* Estilos para cada producto */
+
 .product {
     width: 48%; /* El 48% se adapta para dejar un pequeño espacio entre los dos productos en la misma fila */
     margin-bottom: 20px;
-    /* Otros estilos que desees agregar */
+    
 }
 
 .cart-container {
@@ -147,3 +146,8 @@ footer {
 }
 
 #DOC{width: 80%;}
+
+
+
+
+

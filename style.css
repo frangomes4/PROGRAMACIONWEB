@@ -1,4 +1,4 @@
-/* Estilos globales */
+
 body {
   background-color: silver;
   padding: 10px;
@@ -6,7 +6,7 @@ body {
 
 h1 {
   margin: 10px 0;
-  font-size: 30px; /* Tamaño de fuente ajustado para pantallas más pequeñas */
+  font-size: 30px; 
   font-weight: bold;
 }
 
@@ -30,7 +30,7 @@ p {
   height: auto;
 }
 
-/* Imágenes */
+
 .img-fluid {
   max-width: 100%; 
   height: auto;
@@ -56,7 +56,7 @@ table {
 }
 
 .social-icon img {
-  width: 30px; /* Tamaño más pequeño para pantallas más pequeñas */
+  width: 30px; 
   height: 30px;
 }
 
@@ -104,23 +104,23 @@ li{margin-top: 30px}
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #111; /* Cambia el color de fondo según tus preferencias */
+    background-color: #111; 
     text-align: center;
-    padding: 10px 0; /* Espaciado interno para los iconos */
+    padding: 10px 0; 
   }
   
   .social-icon {
-    margin: 0 10px; /* Espacio entre los iconos */
-    text-decoration: none; /* Elimina el subrayado en los enlaces */
+    margin: 0 10px; 
+    text-decoration: none;
   }
   
   .social-icon img {
-    width: 50px; /* Ajusta el tamaño de los iconos según tus preferencias */
+    width: 50px; 
     height: 50px;
   }
   .container2 {
-    display: flex; /* Hace que los elementos hijos se muestren en línea */
-    justify-content: space-between; /* Distribuye los elementos horizontalmente */
+    display: flex;
+    justify-content: space-between; 
     margin-top: 200px
 
 }
@@ -132,31 +132,31 @@ li{margin-top: 30px}
 
 .fondo-blanco {
   background-color: white;
-  width: 50PX; /* Ajusta el ancho según tus necesidades */
-  height: 50PX; /* Ajusta la altura según tus necesidades */
+  width: 50PX; 
+  height: 50PX; 
 }
 
 .fondo-negro {
   background-color: black;
-  width: 50px; /* Ajusta el ancho según tus necesidades */
-  height: 50px; /* Ajusta la altura según tus necesidades */
+  width: 50px; 
+  height: 50px; 
 }
 
 
 .fondo-blanco {
   background-color: white;
-  width: 50px; /* Ajusta el ancho según tus necesidades */
-  height: 50px; /* Ajusta la altura según tus necesidades */
-  border: 2px solid black; /* Borde negro */
-  border-radius: 10px; /* Bordes redondeados */
+  width: 50px; 
+  height: 50px; 
+  border: 2px solid black; 
+  border-radius: 10px; 
 }
 
 .fondo-negro {
   background-color: black;
-  width: 50px; /* Ajusta el ancho según tus necesidades */
-  height: 50px; /* Ajusta la altura según tus necesidades */
-  border: 2px solid white; /* Borde blanco */
-  border-radius: 10px; /* Bordes redondeados */
+  width: 50px; 
+  height: 50px; 
+  border: 2px solid white; 
+  border-radius: 10px; 
 }
 
 

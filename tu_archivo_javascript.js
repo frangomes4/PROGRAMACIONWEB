@@ -2,13 +2,13 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("blancoNegro").addEventListener("click", function () {
         document.body.style.backgroundColor = "white";
         document.body.style.color = "black";
-        changeParagraphColor("black"); // Cambia el color del texto de los párrafos a negro
+        changeParagraphColor("black"); 
     });
 
     document.getElementById("negroBlanco").addEventListener("click", function () {
         document.body.style.backgroundColor = "black";
         document.body.style.color = "grey";
-        changeParagraphColor("grey"); // Cambia el color del texto de los párrafos a gris
+        changeParagraphColor("grey"); 
     });
 
     function changeParagraphColor(color) {
@@ -30,13 +30,13 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("blancoNegro").addEventListener("click", function () {
         document.body.style.backgroundColor = "silver";
         document.body.style.color = "black";
-        changeParagraphColor("black"); // Cambia el color del texto de los párrafos a negro
+        changeParagraphColor("black"); 
     });
 
     document.getElementById("negroBlanco").addEventListener("click", function () {
         document.body.style.backgroundColor = "black";
         document.body.style.color = "grey";
-        changeParagraphColor("grey"); // Cambia el color del texto de los párrafos a gris
+        changeParagraphColor("grey"); 
     });
 
     function changeParagraphColor(color) {
@@ -47,25 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
-    const cartItems = [];
 
-    addToCartButtons.forEach(button => {
-        button.addEventListener('click', function(event) {
-            const product = event.target.parentNode;
-            const productName = product.querySelector('h3').innerText;
-            const productPrice = product.querySelector('p').innerText;
-            const productInfo = {
-                name: productName,
-                price: productPrice
-                // Puedes añadir más detalles del producto si es necesario
-            };
-            cartItems.push(productInfo);
-            alert(`"${productName}" TE HEMOS ENVIADO UN MAIL CON LOS MEDIOS DE PAGO.`);
-        });
-    });
-});
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -78,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function mostrarCarrito() {
         const carrito = document.getElementById('carrito');
-        carrito.innerHTML = ''; // Limpiamos para actualizar la lista
+        carrito.innerHTML = ''; 
 
         let total = 0;
 
@@ -87,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
             itemElement.innerText = `${item.name} - ${item.price}`;
             carrito.appendChild(itemElement);
 
-            // Calculamos el total sumando los precios
+            
             total += parseFloat(item.price.replace('$', '')); total+=(parseFloat(item.price.replace('$', ''))*999)
         });
 
@@ -127,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function mostrarCarrito() {
         const carrito = document.getElementById('cart-items');
-        carrito.innerHTML = ''; // Limpiamos para actualizar la lista
+        carrito.innerHTML = ''; 
 
         let total = 0;
 
@@ -163,3 +145,57 @@ button.addEventListener('click', function (event) {
 });
 });
 });
+
+
+var carrito = {};
+
+function mostrarCompra(id) {
+    if (carrito[id]) {
+        carrito[id]++;
+    } else {
+        carrito[id] = 1;
+    }
+    actualizarCarrito();
+    alert('Producto agregado al carrito.');
+}
+
+function actualizarCarrito() {
+    var carritoItems = document.getElementById('cart-items');
+    var totalPrecio = document.getElementById('cart-total');
+    carritoItems.innerHTML = '';
+    var total = 0;
+
+    for (var id in carrito) {
+        var cantidad = carrito[id];
+        var producto = obtenerProductoPorId(id);
+        var precio = producto.precio;
+
+        var listItem = document.createElement('li');
+        listItem.textContent = `${producto.nombre}: ${cantidad} x $${precio} = $${cantidad * precio}`;
+        carritoItems.appendChild(listItem);
+
+        total += cantidad * precio;
+    }
+
+    totalPrecio.textContent = total;
+}
+
+function confirmarPedido() {
+  
+    alert('Pedido confirmado. El metodo de compra y los medios de pago fueron enviados al mail. Muchas gracias.');
+    carrito = {}; 
+    actualizarCarrito(); }
+
+
+function obtenerProductoPorId(id) {
+   
+    return {
+        id: id,
+        nombre: 'Nombre del Producto',
+        precio: 100 
+    };
+}
+
+function mostrarCarrito() 
+{
+    actualizarCarrito();}
